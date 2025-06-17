@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+
+  <!-- version 1 style -->
+  <link id="theme-style" rel="stylesheet" href="./styleV1.css" />
+
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="weather-app">
+    <header>
+      <h1>Météo</h1>
+    </header>
+    <main>
+      <div class="weather-icon">
+        <img id="weather-icon" src="" alt="weather icon" />
+      </div>
+      <div class="temperature" id="temperature">--°C</div>
+      <div class="description" id="description">...</div>
+      <div class="location-container">
+        <img class="iconUI" src="./assets/location.png" alt="lieu">
+        <div class="location" id="location">...</div>
+      </div>
+      <div class="details">
+        <div class="detail-item">
+          <img class="iconUI" src="./assets/temperature.png" alt="thermomètre">
+
+          <div class="item-infos">
+            <span id="feels-like">--°C</span>
+            <p>Ressenti</p>
+          </div>
+        </div>
+        <div class="detail-item">
+          <img class=" iconUI" src="./assets/humidity.png" alt="thermomètre">
+          <div class="item-infos">
+            <span id="humidity">--%</span>
+            <p>Humidité</p>
+          </div>
+        </div>
+
+    </main>
+
+    
+  </div>
+  <br>
+  <div class="versionSelector"> Sélectionnez le thème : 
+    <select class="version-select" title="version">
+      <option value="0">Version 1</option>
+      <option value="1">Version 2</option>
+    </select>
+  </div>
+  </div>
+  <script src="meteo.js"></script>
+  <script src="./changeTheme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  color: white;
+}
+
+.iconUI {
+  margin: auto 15px auto 0;
+  width: 25px;
+  height: 30px;
+}
+
+.weather-app {
+  text-align: center;
+  padding: 15px 0 0;
+  max-width: 300px;
+  width: 100%;
+  background-color: #5a69f2
+}
+
+h1 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 15px;
+}
+
+.weather-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+.temperature {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.2em;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.location-container {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  font-size: 1.2em;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.9em;
+}
+
+.detail-item {
+  display: flex;
+  padding: 15px 25px;
+}
+
+.detail-item:first-child {
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#feels-like,
+#humidity {
+  font-size: 1em;
+}
+
+.versionSelector {
+  color: black;
+}
+
+select {
+  padding: 0 5px 0 0;
+  border: none;
+  background-color: transparent;
+  color: rgb(12, 12, 12);
+
+}
+
+option {
+  color: #282729;
+  font-weight: 600;
+}

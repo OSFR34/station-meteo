@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconUI {
+  margin: auto 15px auto 0;
+  width: 25px;
+  height: 30px;
+}
+
+.weather-app {
+  max-width: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.weather-icon,
+.weather-icon img {
+  margin: 0 auto;
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+
+.temperature {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+
+.description {
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.location-container {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  font-size: 1.5em;
+}
+
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  gap: 20px;
+  font-size: 0.9em;
+}
+
+.detail-item {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#feels-like,
+#humidity {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .weather-container {
+    padding: 20px;
+  }
+
+  .city-name {
+    font-size: 2rem;
+  }
+
+  .temperature {
+    font-size: 3rem;
+  }
+
+  .weather-main {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.versionSelector {
+  color: white;
+}
+
+select {
+  padding: 0 5px 0 0;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+option {
+  color: #764ba2;
+  font-weight: 600;
+  background-color: transparent;
+}
